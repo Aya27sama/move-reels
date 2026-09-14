@@ -1,0 +1,24 @@
+{
+  "name": "move-reels",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio --no-open",
+    "render": "remotion render src/index.ts Reels out/final-reel.mp4 --codec=h264 --crf=16 --audio-codec=aac",
+    "still": "remotion still src/index.ts Reels out/check.png --frame=90"
+  },
+  "dependencies": {
+    "@remotion/captions": "4.0.506",
+    "@remotion/cli": "4.0.506",
+    "@remotion/google-fonts": "4.0.506",
+    "@remotion/media": "4.0.506",
+    "remotion": "4.0.506",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "@types/node": "24.3.0",
+    "typescript": "5.9.2"
+  }
+}
